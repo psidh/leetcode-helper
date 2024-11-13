@@ -1,0 +1,44 @@
+.body{
+  border-radius: 10%;
+}
+.popup-container {
+  /* General popup styling */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Adjust as needed */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#problem-name {
+  /* Styling for the problem name */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#hint-container {
+  /* Container for hints */
+  margin-bottom: 15px;
+}
+
+.hint {
+  /* Styling for individual hints */
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+button {
+  /* Button styling */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
