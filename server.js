@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -10,7 +11,7 @@ app.use(bodyParser.json());
 
 app.post('/getHints', async (req, res) => {
   const { problemName } = req.body;
-  const apiKey = process.env.API_KEY; // Access the API key from your environment
+  const apiKey = process.env.API_KEY;
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
