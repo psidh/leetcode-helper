@@ -37,11 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
           if (response.ok) {
             const data = await response.json();
             const hintText = data.hint;
-            const formattedHintText = formatHintText(hintText);
 
             const hintContainer = document.getElementById("hint-container");
             hintContainer.innerHTML = "";
-            hintContainer.innerHTML = formattedHintText;
+            hintContainer.innerHTML = hintText;
           }
         } catch (error) {
           console.error("Error fetching hints:", error);
