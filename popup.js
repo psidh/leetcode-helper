@@ -1,15 +1,3 @@
-function formatHintText(hintText) {
-  return hintText
-    .replace(/##/g, "\n##") // Add line break before each ##
-    .replace(/\n\*\*/g, "\n**") // Add line break before each **
-    .replace(/\*\* /g, "** ") // Add space after **
-    .replace(/ /g, " ") // Replace all spaces with a single space
-    .replace(/(\n\s*\*)+/g, "\n") // Replace extra stars
-    .replace(/\n\s*(-|\*)/g, "\n") // Remove leading dashes and stars
-    .replace(/\n\s+/g, "\n") // Add line break after each line
-    .replace(/\s+/g, " "); // Add a space between words
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("fetch-hints").addEventListener("click", fetchHints);
 
